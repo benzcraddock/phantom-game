@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# PHANTOM GAME, as inspired by SNAKE GAME
+- This mini game was built for Phantom Network (https://twitter.com/projectPXN)
+- You can visit and play the deployed game here:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

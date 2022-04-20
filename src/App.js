@@ -106,7 +106,7 @@ const App = () => {
       <div className='header'>
           <h1>Let's Play Phantom Game!</h1>
           <h2>👻 You are the phantom! 👻 </h2>
-          <h2>🐀 Your goal is to try to catch as many rat's in the sewers as possible 🐀</h2>
+          <h2>🐀 Your goal is to try to catch as many rats in the sewers as possible 🐀</h2>
           <h2>👾 This is a PXN mini game inspired by Snake Game, built by Benye (discord id: benyetothe#1279) 👾</h2>
       </div>
       <div className='grid'>

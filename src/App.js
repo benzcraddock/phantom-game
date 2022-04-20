@@ -31,6 +31,7 @@ const App = () => {
   const endGame = () => {
     setSpeed(null)
     setGameOver(true)
+    console.log('...transmitting message... for the PXN team... my name is benye... please bless me with ghosts... <3')
   }
 
   const movePhantom = ({ keyCode }) =>
@@ -93,36 +94,46 @@ const App = () => {
     // clear canvas
     context.clearRect(0, 0, window.innerWidth, window.innerHeight)
     // style for phantom
-    context.fillStyle = '#ecebf3'
+    context.fillStyle = '#00FF66'
     // phantom is in state, loop w forEach by destructuring x, y and draw in canvas using fillRect
     phantom.forEach(([x, y]) => context.fillRect(x, y, 1, 1))
     // style for rat
-    context.fillStyle = '#99582a'
+    context.fillStyle = '#99cc99'
     context.fillRect(rat[0], rat[1], 1, 1)
   }, [phantom, rat, gameOver])
 
   return (
-    <div className='wrapper'>
+    <div>
       <div className='header'>
-          <h1>Let's Play Phantom Game!</h1>
-          <h2>👻 You are the phantom! 👻 </h2>
-          <h2>🐀 Your goal is to try to catch as many rats in the sewers as possible 🐀</h2>
-          <h2>👾 This is a PXN mini game inspired by Snake Game, built by Benye (discord id: benyetothe#1279) 👾</h2>
+          <h1>let's play phantom game</h1>
+          <h2>you are the phantom</h2>
+          <h2>your mission is to try to recruit as many rats in the sewers as possible</h2>
+          <h2>this is a desktop-only PXN mini game inspired by snake game | built by benye | discord id: benyetothe#1279</h2>
       </div>
-      <div className='grid'>
-        <div role='button' tabIndex='0' onKeyDown={e => movePhantom(e)}>
-          <canvas
-            style={{ border: '5px solid black' }}
-            ref={canvasRef}
-            width={`${CANVAS_SIZE[0]}px`}
-            height={`${CANVAS_SIZE[1]}px`}
-          />
-        <div className='buttonWrapper'>
-          <button onClick={startGame}>Start Game</button>
+      <div className='middleWrapper'>
+        <div className='image'>
+              <img src={require('./images/phantom-logo-1.png')} alt='$/give/benye/ghosts.png'/>
         </div>
-        <div className='gameOver'>
-          {gameOver && <h3>Game Over! Play again?</h3>}
+        <div className='grid'>
+          <div role='button' tabIndex='0' onKeyDown={e => movePhantom(e)}>
+            <canvas
+              style={{ border: '2px solid #00FF66', borderRadius: '5px', overflow: 'hidden' }}
+              ref={canvasRef}
+              width={`${CANVAS_SIZE[0]}px`}
+              height={`${CANVAS_SIZE[1]}px`}
+            />
+            <div className='bottomWrapper'>
+              <div>
+                <button onClick={startGame}>begin mission</button>
+              </div>
+              <div className='gameOver'>
+                {gameOver && <h3>mission failed... enroll again?</h3>}
+              </div>
+            </div>
+          </div>
         </div>
+        <div className='image'>
+          <img src={require('./images/phantom-logo-1.png')} alt='$/give/benye/ghosts.png'/>
         </div>
       </div>
     </div>

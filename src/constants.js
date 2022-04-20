@@ -1,13 +1,13 @@
-const CANVAS_SIZE = [600, 600]
+const CANVAS_SIZE = [400, 400]
 
 const PHANTOM_START = [
-  [8, 10],
-  [8, 11]
+  [7, 11],
+  [7, 12]
 ]
 
-const RAT_START = [8, 5]
+const RAT_START = [7, 3]
 
-const SCALE = 40
+const SCALE = 25
 
 const SPEED = 100
 

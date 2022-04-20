@@ -112,7 +112,7 @@ const App = () => {
       <div className='grid'>
         <div role='button' tabIndex='0' onKeyDown={e => movePhantom(e)}>
           <canvas
-            style={{ border: '10px solid black' }}
+            style={{ border: '5px solid black' }}
             ref={canvasRef}
             width={`${CANVAS_SIZE[0]}px`}
             height={`${CANVAS_SIZE[1]}px`}

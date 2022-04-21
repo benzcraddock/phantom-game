@@ -1,6 +1,6 @@
 # PHANTOM GAME, as inspired by SNAKE GAME
 - This mini game was built for Phantom Network (https://twitter.com/projectPXN)
-- You can visit and play the deployed game here:
+- You can visit and play the deployed game here: https://phantom-game.vercel.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -13,6 +13,8 @@ button {
 
 button:hover {
   background-color: rgba(0,255,102,0.2);
+  transition: all .5s ease;
+  transform: scale(1.2);
 }
 
 .image {
@@ -53,7 +55,7 @@ img {
   display: flex;
   position: fixed;
   margin-top: 25px;
-  margin-right: 20rem;
+  margin-right: 19rem;
   font-size: 1rem;
   color: #00FF66;
 }
@@ -65,11 +67,26 @@ img {
   align-items: center;
 }
 
+h1:hover {
+  transition: all .5s ease;
+  transform: scale(1.1);
+}
+
+h2:hover {
+  transition: all .5s ease;
+  transform: scale(1.1);
+}
+
+h3:hover {
+  transition: all .5s ease;
+  transform: scale(1.1);
+}
+
 h1 {
   font-size: 1.3rem;
   border-bottom: 2px solid #00FF66;
   margin-bottom: 15px;
-  width: 50%;
+  width: 35%;
 }
 
 h2 {
